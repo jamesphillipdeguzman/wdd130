@@ -1,0 +1,79 @@
+/* Define @import for my Google Fonts here for Roboto and Rock Salt. This is always on top of your CSS ruleset */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&display=swap');
+/* Define my global CSS variables here and referenced them with var() later on */
+:root {
+    --primary-color: #1649FF;
+    --secondary-color: #7699d4;
+    --accent1-color: #d5e6ec;
+    --accent2-color: #63b4d1;
+
+    --heading-font: 'Rock Salt', serif;
+    --paragraph-font: Roboto, serif;
+
+    --nav-background-color: #d5e6ec;
+    --nav-link-color: #5d0c88;
+    --nav-hover-link-color: #ffffff;
+    --nav-hover-background-color: #88d1cf;
+
+}
+
+/* My Rafting Site Plan CSS rules are listed here */
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+header {
+    padding: 20px;
+    background-color: var(--accent1-color);
+}
+
+p {
+    padding: 25px;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem; /* I will remind myself that rem mean relative em units to the nearest root element property, in this case the font size */
+    display: flex; /*convert into flex container to easily arrange nav links children */
+}
+
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none; /* remove underline in your nav links */
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+/*Change the color of the main color palettes used in the site plan */
+.primary-color {
+    color: var(--primary-color);
+}
+
+.secondary-color{
+    color: var(--secondary-color);
+}
+
+.accent1-color {
+    color: var(--accent1-color);
+}
+
+.accent2-color {
+    color: var(--accent2-color);
+}
