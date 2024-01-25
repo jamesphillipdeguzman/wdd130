@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+body {
+    font-size: 16px;
+    font-family: Roboto, Arial, sans-serif;
+}
+
 nav {
     background-color: steelblue;
     padding: 10px;
@@ -30,7 +35,7 @@ main img {
 }
 
 p {
-    padding: 0;
+    margin: 1rem;
 }
 
 main {
@@ -45,7 +50,8 @@ aside {
     padding: 10px;
     box-shadow: 0 0 3px gray;
     background-color:aqua;
-    color:black;
+    color:#fff;
+    position: relative
 }
 
 aside img {
@@ -55,8 +61,8 @@ aside img {
 
 aside h2 {
     position: absolute;
-    top: 47px;
-    left: 150px;
+    top: 95px;
+    left: 70px;
 }
 
 footer {
