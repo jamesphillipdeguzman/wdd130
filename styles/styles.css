@@ -1,3 +1,10 @@
+/*Add this universal selector for margin, padding and box-sizing to easily control the layout of the page. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 nav {
     background-color: steelblue;
     padding: 10px;
@@ -14,6 +21,7 @@ h1 {
 }
 
 main img {
+    float: right;
     width: 150px;
     height: auto;
     border: 1px solid steelblue;
@@ -30,14 +38,14 @@ main {
 }
 
 aside {
-    width: 20rem;
+    width: 20em;
+    text-align: center;
     margin: 1rem;
     border: 1px solid rgba(0 0 0 / 0.2);
     padding: 10px;
     box-shadow: 0 0 3px gray;
     background-color:aqua;
     color:black;
-    text-align: center;
 }
 
 aside img {
@@ -45,9 +53,25 @@ aside img {
     height: auto;
 }
 
+aside h2 {
+    position: absolute;
+    top: 47px;
+    left: 150px;
+}
+
 footer {
 
     margin-top: 10px;
     border-top: 1px solid rgba(0 0 0 / 0.2);
     text-align: center;
+}
+
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, .1);
+    padding: 1rem;
+    background-color: #eee;
+    color: #000;
 }
