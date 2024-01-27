@@ -27,13 +27,15 @@ h2, h3
 {
     font-family: var(--heading-font);
     color: var(--primary-color);
-    padding: 200px;
+    padding: 100px;
+
 }
 
 p {
     font-family: var(--paragraph-font);
     color: var(--paragraph-color);
     padding: 100px;
+
 }
 
 nav {
@@ -53,27 +55,69 @@ nav a {
     padding: 1rem;
 }
 
-div {
+
+
+.herodiv {
+    margin: 10px auto;
     position: relative;
 
 }
-.hero img {
+
+.herodiv img {
     display: block;
     width: 100%;
     height: auto;
 
 }
 
-h1, article {
-    position: absolute;
+h1 {
+   position: absolute;
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
+article {
+    position: absolute;
+}
 
-article img {
+.article img {
+
     float: right;
     opacity: 0.5;
+    width: 50%;
+    height: 50%;
+
+
+}
+
+.stats {
+
+    position: absolute;
+    top: 500px;
+    bottom: 0px;
+    left: 355px;
+    background: radial-gradient(#eee, #4567aa);
+    border: 1px solid #000;
+    padding: 1rem;
+    box-shadow: 0 0 20px #111;
+    opacity: 0.8;
+    width: 50%;
+    height: 30%;
+
+}
+
+.stats2 {
+
+    position: absolute;
+    top: 10px;
+    bottom: 0px;
+    left: 5px;
+
+    padding: 0.2rem;
+
+    opacity: 0.8;
+    width: 50%;
+    height: 30%;
 
 }
 
