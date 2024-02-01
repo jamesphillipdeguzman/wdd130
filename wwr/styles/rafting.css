@@ -232,7 +232,7 @@ footer nav {
 h1 {
    position: absolute;
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: var(--accent1-color);
 }
 
 article {
@@ -259,9 +259,10 @@ article {
     border: 1px solid #000;
     padding: 1rem;
     box-shadow: 0 0 20px #111;
-    opacity: 0.8;
+    opacity: 1;
     width: 50%;
     height: 30%;
+    color: var(--paragraph-color);
 
 }
 
@@ -274,9 +275,10 @@ article {
 
     padding: 0.2rem;
 
-    opacity: 0.8;
+    opacity: 0.9;
     width: 50%;
     height: 30%;
+    color: var(--paragraph-color);
 
 }
 
