@@ -22,6 +22,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 h2 {
@@ -30,6 +31,8 @@ h2 {
     color: var(--paragraph-color);
     padding: 100px;
 
+    /* border: 1px solid #000; */
+    height: 80px;
 
 }
 
@@ -38,19 +41,19 @@ h3
     font-family: var(--heading-font);
     color: var(--primary-color);
     padding: 100px;
+    font-size: 1rem;
 
 }
 
 p {
     font-family: var(--paragraph-font);
     color: var(--paragraph-color);
-    padding: 5px;
+    padding: 10px;
     font-size: 1rem;
 
+
 }
-* {
-    box-sizing: border-box;
-}
+
 
 .herodiv {
     margin: 10px auto;
@@ -71,13 +74,7 @@ header {
     grid-template-columns: 100px 1fr 1fr;
     grid-template-rows: 100px 1fr 1fr;
     align-items: center;
-    max-width: 1200px;
-    /* border: 2px solid #eee; */
-
-
-    /* justify-items: center; */
-
-
+    max-width: 100%;
 
 }
 
@@ -95,7 +92,7 @@ header img {
 }
 
 nav {
-    background-color: var(--nav-background-color);
+    /* background-color: var(--nav-background-color); */
     font-size: 1.2rem;
     /* I will remind myself that rem mean relative em units to the nearest root element property, in this case the font size */
     display: flex;
@@ -110,7 +107,6 @@ nav a {
     color: var(--nav-link-color);
     font-family: var(--paragraph-font);
     text-decoration: none;
-    /* remove underline in your nav links */
     padding: 1rem;
 
 
@@ -122,27 +118,53 @@ nav a {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 10px;
-    /* height: 200px; */
+    gap: 5px;
+    /* border-style: solid;
+    border-color: rgba(209, 91, 44, 0.2); */
+
+
+}
+
+.flexbox-img {
+
+    width: 150px;
+    height: auto;
     /* border-style: solid;
     border-color: rgba(45, 90, 69, 0.2); */
+    align-items: center;
+    margin: 10px;
+
+}
+
+.flexbox-arrow-img {
+
+    width: 30px;
+    height: auto;
+    /* border-style: solid;
+    border-color: rgba(45, 90, 69, 0.2); */
+    align-items: center;
+    margin: 10px;
+
 
 }
 
 .flexbox-item {
-    width: 200px;
-    margin: 5px;
-    /* border: 2px solid #ccc;
+    width: 300px;
+    margin: 10px;
+    /* border: 1px solid #253799;
     background-color: #d5e6ec; */
     height: auto;
     align-content: center;
+    justify-content: center;
+
+
 }
 
 .flexbox-item-1 {
     min-height: 50px;
-    flex-grow: 1;
+    /* flex-grow: 1; */
     color: var(--paragraph-color);
-
+    justify-content: space-around;
 
 }
 
@@ -156,27 +178,35 @@ nav a {
     min-height: 100px;
 }
 
+section {
+    display: grid;
+    justify-content: center;
+
+}
 
 
-section img {
 
-    width: 50%;
-    height: auto;
-    border-style: solid;
-    border-color: rgba(45, 90, 69, 0.2);
-    grid-column: 3/2;
-    grid-row: 4;
-    justify-items: start;
-    align-items: start;
+figure {
+
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid #5d0c88; */
+    align-items: center;
 
 }
 
 figcaption {
     color: var(--nav-link-color);
     font-family: var(--paragraph-font);
+    font-size: 0.9rem;
+
+    text-align: center;
     /* border-style: solid;
     border-color: rgba(45, 90, 69, 0.2); */
-    justify-items: center;
+    padding: 2px;
+    width: 80%;
+    justify-content: center;
+
 }
 
 footer {
@@ -184,46 +214,32 @@ footer {
     display: grid;
     grid-template-columns: 100px 1fr 1fr;
     grid-template-rows: 100px 1fr 1fr;
-    align-items: center;
-    max-width: 1200px;
+    align-items: self-end;
+    max-width: 100%;
     /* border: 2px solid #eee; */
-
-
-    /* justify-items: center; */
-
-
 
 }
 
 footer img {
-    display: grid;
-    grid-column: 2 / 4;
-    grid-row: 1;
 
-    width: 50px;
+    width: 30px;
     height: auto;
-    /* border-style: solid;
-    border-color: rgb(9, 9, 165, 0.2); */
-    align-content: end;
+
 }
 
 footer p {
     grid-column: 1 / 4;
     grid-row: 3;
     align-items: center;
-    /* border-style: solid;
-    border-color: rgb(9, 9, 165, 0.2); */
+
 }
 
 footer nav {
 
     grid-column: 4/ 4;
     grid-row: 3;
-
     width: 300px;
     height: auto;
-    /* border-style: solid;
-    border-color: rgb(9, 9, 165, 0.2); */
     justify-content: center;
 
 }
@@ -256,28 +272,28 @@ article {
     bottom: 0px;
     left: 355px;
     background: radial-gradient(#eee, #4567aa);
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     padding: 1rem;
     box-shadow: 0 0 20px #111;
     opacity: 1;
     width: 50%;
     height: 30%;
+    margin: 10px;
     color: var(--paragraph-color);
 
 }
 
-.stats2 {
+.mission {
 
     position: absolute;
     top: 10px;
     bottom: 0px;
     left: 5px;
-
     padding: 0.2rem;
-
     opacity: 0.9;
     width: 50%;
     height: 30%;
+    margin: 10px;
     color: var(--paragraph-color);
 
 }
