@@ -16,6 +16,8 @@ nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+
+
 }
 
 nav a {
@@ -83,14 +85,19 @@ aside h2 {
     left: 70px;
 }
 
-header, .grid footer {
+footer {
+    justify-content: center;
+}
 
-    max-width: 840px;
+header, .grid, footer {
+
+    max-width: 100%;
     margin: 0;
 
-    /* border-top: 1px solid rgba(0 0 0 / 0.2);
-    text-align: center; */
+    border-top: 1px solid rgba(0 0 0 / 0.2);
+    text-align: center;
 }
+
 
 
 /* Class Selectors */
