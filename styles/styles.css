@@ -85,9 +85,6 @@ aside h2 {
     left: 70px;
 }
 
-footer {
-    justify-content: center;
-}
 
 header, .grid, footer {
 
@@ -97,7 +94,6 @@ header, .grid, footer {
     border-top: 1px solid rgba(0 0 0 / 0.2);
     text-align: center;
 }
-
 
 
 /* Class Selectors */
