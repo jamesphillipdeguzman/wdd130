@@ -1,0 +1,57 @@
+.wrapper {
+    background-color: #eee;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+
+}
+
+label, input {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    padding: 5px;
+    margin: 10px 0px 20px 10px;
+    width: 300px;
+
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: 2px solid rebeccapurple;
+
+}
+
+textarea {
+    padding: 5px;
+    margin: 10px 0px 20px 10px;
+    width: 300px;
+}
+
+select {
+    padding: 5px;
+    margin: 10px 0px 20px 10px;
+    width: 315px;
+}
+
+input[type=number] {
+    padding-bottom: 5px;
+    width: 300px;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 0.80rem;
+}
+
+input[type=submit] {
+    padding: 5px 15px;
+    background: #3b0750;
+    border: 0 none;
+    cursor: pointer;
+    color: #fff;
+    height: 50px;
+    width:150px;
+
+}
