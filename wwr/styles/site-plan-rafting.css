@@ -17,7 +17,7 @@
 
 }
 
-/* My Rafting Site Plan CSS rules are listed here */
+
 
 body {
     font-family: var(--paragraph-font);
@@ -41,14 +41,14 @@ p {
 
 nav {
     background-color: var(--nav-background-color);
-    font-size: 1.2rem; /* I will remind myself that rem mean relative em units to the nearest root element property, in this case the font size */
-    display: flex; /*convert into flex container to easily arrange nav links children */
+    font-size: 1.2rem;
+    display: flex;
 }
 
 nav a {
     display: block;
     color: var(--nav-link-color);
-    text-decoration: none; /* remove underline in your nav links */
+    text-decoration: none;
     padding: 1rem;
 }
 
@@ -61,7 +61,7 @@ nav a:hover {
     background-color: var(--nav-hover-background-color);
 }
 
-/*Change the color of the main color palettes used in the site plan */
+
 .primary-color {
     color: var(--primary-color);
 }
