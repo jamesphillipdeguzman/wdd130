@@ -1,3 +1,4 @@
+/* Move @import statement to the top */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&display=swap');
 :root {
     --primary-color: #1649FF;
@@ -18,6 +19,9 @@
 
 
 }
+
+
+
 
 * {
     margin: 0;
@@ -88,7 +92,8 @@ ul.no-bullets {
 
 li {
     margin: 0;
-    padding 0;
+    padding: 0;
+    color: #0c0b0b;
 }
 
 ul img {
@@ -249,11 +254,7 @@ nav a {
     color: var(--tertiary_color)
 }
 
-textarea {
-    height: 150px;
-    width: 75%;
 
-}
 
 
 .flexbox-item-subscribe-letter {
@@ -285,7 +286,6 @@ textarea {
     justify-content: center;
     align-self: center;
     flex-wrap: wrap;
-    box-shadow: 3px solid steelblue;
     background-color: rgba(22, 73, 255, 0.5);
 
 
@@ -323,8 +323,6 @@ textarea {
     justify-content: center;
     width: 600px;
 
-
-
 }
 
 
@@ -359,6 +357,11 @@ label {
 
 l
 
+ {
+    height: 150px;
+    width: 75%;
+
+}
 
 input:focus {
     outline: 2px solid blue;
