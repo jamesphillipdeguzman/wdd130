@@ -417,7 +417,22 @@ nav a {
 
 }
 
-.container {
+.container-index {
+    display: -ms-grid;
+    display: grid;
+    position: relative;
+    -ms-grid-columns: 1fr 100px 100px 100px 1fr 1fr;
+    grid-template-columns: 1fr 100px 100px 100px 1fr 1fr;
+    -ms-grid-rows: 100px 100px 100px 100px 1fr 1fr;
+    grid-template-rows: 100px 100px 100px 100px 1fr 1fr;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-color: #060707;
+    -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+    
+}
+
+.container-trip {
     display: -ms-grid;
     display: grid;
     position: relative;
@@ -431,7 +446,6 @@ nav a {
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
 
 }
-
 
 
 .container::before {
@@ -1182,6 +1196,7 @@ article {
     align-items: center;
     padding: 10px;
     margin: 20px;
+
 
 }
 
