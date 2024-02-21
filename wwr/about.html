@@ -10,38 +10,43 @@
 </head>
 
 <body>
+    <!-- https://jamesphillipdeguzman.github.io/wdd130/ -->
     <header>
-        <img src="images/logo.png" alt="Rafting site logo">
-        <nav>
-            <a href="https://jamesphillipdeguzman.github.io/wdd130/"> Home </a>
-            <a href="https://jamesphillipdeguzman.github.io/wdd130/wwr/about.html"> About Us</a>
-            <a href="#"> Trips </a>
-            <a href="https://jamesphillipdeguzman.github.io/wdd130/wwr/contact.html"> Contact Us </a>
+        <nav class="navlinks">
+            <img src="images/logo.png" alt="Rafting site logo">
+            <a href="index.html"> Home </a>
+            <a href="about.html"> About Us</a>
+            <a href="trips.html"> Trips </a>
+            <a href="contact.html"> Contact Us </a>
 
         </nav>
     </header>
     <main>
-        <div class="herodiv flexbox-container">
-               <img src="images/rafting_hero.jpg" alt=" hero image">
-               <h1> White Water Rafting </h1>
 
-        <article class="stats">
+        <div class="herodiv flexbox-container-hero">
+               <img src="images/about_hero_image.jpg" alt="about hero image">
+               <h1 class="about-hero-h1"> White Water Rafting </h1>
 
-            <div class="article">
+            <div class="about-mission">
+                <article class="stats">
 
-            <img src="images/rafting_happy.png" alt="happy rafting clients">
-                <h3> Fun, fun, fun! </h3>
-                <p class="mission">Our number one priority is to safeguard you as you enjoy the thrill of water rafting and the beauty of nature. We
-                    aim
-                    to
-                    help you create memorable and unforgettable experiences with us that you will love to share with your family and
-                    friends! </p>
+                    <div class="article">
+
+                    <img src="images/rafting_happy.png" alt="happy rafting clients">
+                        <h3 class="fun"> Fun, fun, fun! </h3>
+                        <p class="mission">Our number one priority is to safeguard you as you enjoy the thrill of water rafting and the beauty of nature. We
+                            aim
+                            to
+                            help you create memorable and unforgettable experiences with us that you will love to share with your family and
+                            friends! </p>
+                    </div>
+                </article>
             </div>
-        </article>
         </div>
-        <h2 class="flexbox-container"> History </h2>
-        <section class="flexbox-container">
-            <h3 class="flexbox-container flexbox-item-1"> Our History
+
+        <h2 class="flexbox-container-h2"> History </h2>
+        <section class="flexbox-container-row">
+            <h3 class="flexbox-container-row flexbox-item-1"> Our History
                 <img class="flexbox-arrow-img" src="images/right-arrow.png" alt="right arrow">
             </h3>
             <p> A group of outdoor enthusiasts, driven by their love for adrenaline-pumping adventures, came together to explore the
@@ -53,38 +58,41 @@
             company dedicated to providing unforgettable experiences for fellow adventure seekers.</p>
 
         </section>
-        <h2 class="flexbox-container"> Adventure Awaits You! </h2>
-        <section class="flexbox-container">
-            <h3 class="flexbox-container flexbox-item-1"> Your adventure starts here!
+        <h2 class="flexbox-container-h2"> Adventure Awaits You! </h2>
+        <section class="flexbox-container-row">
+            <h3 class="flexbox-container-row flexbox-item-1"> Your adventure starts here!
                 <img class="flexbox-arrow-img" src="images/right-arrow.png" alt="right arrow" >
             </h3>
             <figure>
             <img class="flexbox-img" src="images/rafting1.jpg" alt="rafting image 1" >
-            <figcaption class="flexbox-item-1"> Whoa, that rush! Pure awesome on the water waves! </figcaption>
+            <figcaption class="flexbox-fig"> Whoa, that rush! Pure awesome on the water waves! </figcaption>
             </figure>
             <figure>
                 <img class="flexbox-img" src="images/rafting2.jpg" alt="rafting image 2">
-                <figcaption class="flexbox-item-1"> Colorful helmets for water rafting! </figcaption>
+                <figcaption class="flexbox-fig"> Colorful helmets for water rafting! </figcaption>
             </figure>
             <figure>
                 <img class="flexbox-img" src="images/rafting3.jpg" alt="rafting image 3">
-                <figcaption class="flexbox-item-1"> Fun, fun, fun together with your family! </figcaption>
+                <figcaption class="flexbox-fig"> Fun, fun, fun together with your family! </figcaption>
             </figure>
             <figure>
                 <img class="flexbox-img" src="images/rafting4.jpg" alt="rafting image 4">
-                <figcaption class="flexbox-item-1"> Woo-hoo! Splash attack – nature's playful water dance. </figcaption>
+                <figcaption class="flexbox-fig"> Woo-hoo! Splash attack – nature's playful water dance. </figcaption>
             </figure>
             <figure>
                 <img class="flexbox-img" src="images/rafting5.jpg" alt="rafting image 5">
-                <figcaption class="flexbox-item-1"> Conquer rapids, celebrate teamwork, and river victories. </figcaption>
+                <figcaption class="flexbox-fig"> Conquer rapids, celebrate teamwork, and river victories. </figcaption>
             </figure>
         </section>
+
     </main>
 
+        <div class="footer-rectangle"></div>
         <footer>
-            <p> &copy;2024 <img class="footer_rafting" src="images/rafting.png" alt="rafting" width="200" height="100"> White Water
-                Rafting <img class="footer_rafting" src="images/rafting.png" alt="rafting" width="200" height="100"> James Phillip
-                De Guzman </p>
+            <p class="do-not-center"> &copy;2024 <img class="footer_rafting" src="images/rafting.png" alt="rafting" width="200"
+                    height="100">
+                White Water Rafting <img class="footer_rafting" src="images/rafting.png" alt="rafting" width="200" height="100">
+                James Phillip De Guzman </p>
             <nav class="sociallinks">
                 <a href="https://facebook.com">
                     <img src="images/facebook.png" alt="Facebook" width="200" height="100">
@@ -94,6 +102,10 @@
                 </a>
                 <a href="https://instagram.com">
                     <img src="images/instagram.png" alt="Instagram" width="200" height="100">
+                </a>
+                <a href="https://app.moqups.com/tBcBfbgvHFQ3xWxQ3ZZfbxXsxR4B1cqT/edit/page/a6729acac">
+                    <img src="images/contact-us_wireframe.png" alt="link to the Trips page wireframe image" width="100"
+                        height="100">
                 </a>
 
             </nav>
